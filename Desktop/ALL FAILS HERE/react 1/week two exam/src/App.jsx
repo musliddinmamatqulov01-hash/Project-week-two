@@ -13,8 +13,12 @@ import About from "./Shared/About";
 import { Video } from "./Shared/Video";
 import { SectionCenter } from "./Shared/SectionCenter";
 import Footer from "./statickcomponent/footerFinaly";
-
+import Bur from "./assets/bur.svg"
+import { useState } from "react";
+import CustomDrawer from "./muicomponents/Drawer";
 export default function App() {
+   const [open, setOpen] = useState(false);
+
   return (
     <>
     <Box
@@ -68,6 +72,14 @@ export default function App() {
           />
         </Card>
       </Box>
+     <Box
+        onClick={() => setOpen(true)}
+        sx={{ cursor: "pointer", display: {xs:"block",lg:"none"} }}
+      >
+        <img src={Bur} width={30} />
+      </Box>
+
+      <CustomDrawer open={open} setOpen={setOpen} />
     </Box>
     <Box>
       <Navbar1/>
@@ -91,7 +103,7 @@ export default function App() {
     <Footer1/>
   </Box>
   <Box>
-    <Footer/>
+    <Footer/> 
   </Box>
 </>
   );

@@ -4,9 +4,9 @@ import GridViewIcon from "@mui/icons-material/GridView";
 import CloseIcon from "@mui/icons-material/Close";
 import video1 from '../assets/3c4c7f69ead5367bbc40e2fa0c69a652680307e1.png'
 import video2 from '../assets/Container (1).png'
-import video3 from '../assets/Container (1).png'
-import video4 from '../assets/Container (1).png'
-import video5 from '../assets/Container (1).png'
+import video3 from '../assets/Container (3).png'
+import video4 from '../assets/Container (2).png'
+import video5 from '../assets/Container (4).png'
 
 const videos = [
   { id: 1, img: video1, url: "https://www.youtube.com/embed/Ja3IH_ZnAGg" },
