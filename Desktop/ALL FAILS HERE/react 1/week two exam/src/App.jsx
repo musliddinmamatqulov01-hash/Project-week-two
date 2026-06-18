@@ -16,6 +16,7 @@ import Footer from "./statickcomponent/footerFinaly";
 import Bur from "./assets/bur.svg"
 import { useState } from "react";
 import CustomDrawer from "./muicomponents/Drawer";
+import { Cruds } from "./Cruds/AllCrud";
 export default function App() {
    const [open, setOpen] = useState(false);
 
@@ -101,6 +102,9 @@ export default function App() {
   </Box>
   <Box>
     <Footer1/>
+  </Box>
+  <Box>
+    <Cruds/>
   </Box>
   <Box>
     <Footer/> 
